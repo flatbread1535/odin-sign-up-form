@@ -113,6 +113,10 @@ button {
     margin: 30px 40px;
 }
 
+button:hover {
+    background-color:#71895b
+}
+
 .info-row {
     display: flex;
     margin-bottom: 15px;
@@ -146,6 +150,16 @@ input[type="password"] {
     width: 100%;
     padding: 5px;
     font-size: 14px;
+}
+
+input:focus:invalid {
+    border: 2px solid red;
+    outline: none;
+}
+
+input:focus:valid {
+    border: 2px solid lightskyblue;
+    outline: none;
 }
 
 .login-link {
