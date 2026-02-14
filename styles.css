@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "GoogleSans";
+    src: url("fonts/GoogleSans-Regular.ttf") format("truetype");
+}
+
+body {
+    display: flex;
+    font-family: "GoogleSans", sans-serif;
+}
+
+.left {
+    width: 35vw;
+    min-width: 200px;
+    height: 100vh;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.right {
+    flex: 1;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+    height: 35%;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 30px 40px;
+}
+
+.top > div {
+    max-width: 55ch;
+}
+
+.info {
+    background-color: white;
+    box-shadow: 0px 10px 10px -5px gray;
+    padding: 25px 40px;
+}
+
+.info-title {
+    color: rgb(53, 53, 53);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    padding: 2% 7%;
+    box-shadow: 2px 2px 4px gray;
+    cursor: pointer;
+    margin: 30px 40px;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 10%;
+}
+
+.info-row > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: rgb(96, 96, 96);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+label > span {
+    color: red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.login {
+    margin-left: 40px;
+}
